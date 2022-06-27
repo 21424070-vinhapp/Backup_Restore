@@ -42,11 +42,11 @@ public class BackupContactActivity extends AppCompatActivity {
             {
                 String idName=ContactsContract.CommonDataKinds.Phone.DISPLAY_NAME;
                 int colNameIndex=cursor.getColumnIndex(idName);
-                String name="Name: "+cursor.getString(colNameIndex).substring(1,2);
+                String name="Name: "+cursor.getString(colNameIndex);
 
                 String idPhone=ContactsContract.CommonDataKinds.Phone.NUMBER;
                 int colPhoneIndex=cursor.getColumnIndex(idPhone);
-                String phone="Phone: "+cursor.getString(colPhoneIndex).substring(1,3);
+                String phone="Phone: "+cursor.getString(colPhoneIndex);
                 //Log.d("bbb", "getAllContacFromDevice: "+ name + " "+ phone);
                 current.add(new Contacts(name,phone));
             }
