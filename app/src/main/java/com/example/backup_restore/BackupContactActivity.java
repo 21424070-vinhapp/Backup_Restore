@@ -46,12 +46,12 @@ public class BackupContactActivity extends AppCompatActivity {
             {
                 String idName=ContactsContract.CommonDataKinds.Phone.DISPLAY_NAME;
                 int colNameIndex=cursor.getColumnIndex(idName);
-                String name=cursor.getString(colNameIndex).substring(1,2);
+                String name="Name: "+cursor.getString(colNameIndex).substring(1,2);
 
                 String idPhone=ContactsContract.CommonDataKinds.Phone.NUMBER;
                 int colPhoneIndex=cursor.getColumnIndex(idPhone);
-                String phone=cursor.getString(colPhoneIndex).substring(1,3);
-                Log.d("bbb", "getAllContacFromDevice: "+ name + " "+ phone);
+                String phone="Phone: "+cursor.getString(colPhoneIndex).substring(1,3);
+                //Log.d("bbb", "getAllContacFromDevice: "+ name + " "+ phone);
                 current.add(new Contacts(name,phone));
             }
         }
