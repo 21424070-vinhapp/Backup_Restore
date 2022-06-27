@@ -5,7 +5,7 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.READ_CONTACTS" />
-    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
 
     <application
         android:allowBackup="true"
@@ -18,16 +18,16 @@
         android:theme="@style/Theme.Backup_Restore"
         tools:targetApi="31">
         <activity
-            android:name=".BackupSmsActivity"
+            android:name=".presentation.view.backup_sms.BackupSmsActivity"
             android:exported="false" />
         <activity
-            android:name=".BackupContactActivity"
+            android:name=".presentation.view.backup_contact.BackupContactActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity2"
+            android:name=".presentation.view.main.MainActivity2"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".presentation.view.login.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

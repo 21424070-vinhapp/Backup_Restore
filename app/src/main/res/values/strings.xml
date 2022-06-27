@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Backup_Restore</string>
-    <string name="stringTitle">ĐỌC DANH BẠ TỪ ĐIỆN THOẠI DI ĐỘNG</string>
+    <string name="stringTitleContact">ĐỌC DANH BẠ TỪ ĐIỆN THOẠI DI ĐỘNG</string>
+    <string name="stringTitleSms">ĐỌC TIN NHẮN TỪ ĐIỆN THOẠI DI ĐỘNG</string>
 </resources>

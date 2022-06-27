@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity2">
+    tools:context=".presentation.view.main.MainActivity2">
 
     <TextView
         android:layout_width="wrap_content"
@@ -21,8 +21,18 @@
         android:id="@+id/btnBackupContact"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/stringTitle"
+        android:text="@string/stringTitleContact"
         app:layout_constraintTop_toBottomOf="@+id/txtTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <Button
+        android:id="@+id/btnBackupSms"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/stringTitleSms"
+        app:layout_constraintTop_toBottomOf="@+id/btnBackupContact"
         app:layout_constraintStart_toStartOf="parent"
         android:layout_marginTop="30dp"
         app:layout_constraintEnd_toEndOf="parent"/>

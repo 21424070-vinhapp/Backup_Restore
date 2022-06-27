@@ -1,19 +1,13 @@
-package com.example.backup_restore;
+package com.example.backup_restore.presentation.view.login;
 
-import androidx.activity.result.ActivityResult;
-import androidx.activity.result.ActivityResultCallback;
-import androidx.activity.result.ActivityResultLauncher;
-import androidx.activity.result.contract.ActivityResultContracts;
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 
-import com.example.backup_restore.databinding.LoginBinding;
+import com.example.backup_restore.presentation.view.main.MainActivity2;
 import com.example.backup_restore.databinding.LoginBinding;
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
@@ -80,7 +74,7 @@ public class MainActivity extends AppCompatActivity {
     private void handleSignInResult(Task<GoogleSignInAccount> task) {
         try {
             GoogleSignInAccount account=task.getResult(ApiException.class);
-            Intent intent=new Intent(MainActivity.this,MainActivity2.class);
+            Intent intent=new Intent(MainActivity.this, MainActivity2.class);
             startActivity(intent);
         } catch (ApiException e) {
             e.printStackTrace();

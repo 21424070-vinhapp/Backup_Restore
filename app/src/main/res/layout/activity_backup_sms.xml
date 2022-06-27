@@ -4,9 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".BackupSmsActivity">
+    tools:context=".presentation.view.backup_sms.BackupSmsActivity">
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcvBackupSMS"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_constraintStart_toStartOf="parent"

@@ -1,4 +1,4 @@
-package com.example.backup_restore;
+package com.example.backup_restore.presentation.view.backup_contact;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
@@ -10,8 +10,8 @@ import android.database.Cursor;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.ContactsContract;
-import android.util.Log;
 
+import com.example.backup_restore.presentation.adapter.ContactAdapter;
 import com.example.backup_restore.databinding.ActivityBackupContactBinding;
 import com.example.backup_restore.model.Contacts;
 
@@ -33,10 +33,6 @@ public class BackupContactActivity extends AppCompatActivity {
     }
 
     private List<Contacts> getAllContacFromDevice() {
-        //check permission
-        if(ContextCompat.checkSelfPermission(this, Manifest.permission.READ_CONTACTS)!= PackageManager.PERMISSION_GRANTED){
-            ActivityCompat.requestPermissions(this,new String[]{Manifest.permission.READ_CONTACTS},0);
-        }
         current=new ArrayList<>();
         Uri uri= ContactsContract.CommonDataKinds.Phone.CONTENT_URI;
         Cursor cursor=getContentResolver().query(uri,null,null,null,null);
@@ -55,7 +51,6 @@ public class BackupContactActivity extends AppCompatActivity {
                 current.add(new Contacts(name,phone));
             }
         }
-
         cursor.close();
         return current;
     }
