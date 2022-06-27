@@ -13,7 +13,8 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 
-import com.example.backup_restore.databinding.ActivityMainBinding;
+import com.example.backup_restore.databinding.LoginBinding;
+import com.example.backup_restore.databinding.LoginBinding;
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 import com.google.android.gms.auth.api.signin.GoogleSignInClient;
@@ -27,12 +28,12 @@ public class MainActivity extends AppCompatActivity {
     GoogleSignInOptions gso;
     GoogleSignInClient mGoogleSignInClient;
     GoogleSignInAccount gsa;
-    ActivityMainBinding mainBinding;
+    LoginBinding mainBinding;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        mainBinding=ActivityMainBinding.inflate(getLayoutInflater());
+        mainBinding=LoginBinding.inflate(getLayoutInflater());
         setContentView(mainBinding.getRoot());
 
         // Set the dimensions of the sign-in button

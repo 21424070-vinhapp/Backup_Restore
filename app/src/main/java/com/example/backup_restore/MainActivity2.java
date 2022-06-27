@@ -8,18 +8,19 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 
-import com.example.backup_restore.databinding.ActivityMain2Binding;
+import com.example.backup_restore.databinding.MainBinding;
+import com.example.backup_restore.databinding.MainBinding;
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 
 import java.util.List;
 
 public class MainActivity2 extends AppCompatActivity {
-    ActivityMain2Binding main2Binding;
+    MainBinding main2Binding;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        main2Binding=ActivityMain2Binding.inflate(getLayoutInflater());
+        main2Binding=MainBinding.inflate(getLayoutInflater());
         setContentView(main2Binding.getRoot());
 
         GoogleSignInAccount acct = GoogleSignIn.getLastSignedInAccount(this);

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable
+            name="sms"
+            type="com.example.backup_restore.model.Sms" />
+    </data>
+    <androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="5dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtPhoneSms"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="+ 127861387"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textColor="#9C27B0"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/txtTimeSms"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="+ 127861387"
+                android:textAlignment="center"
+                android:textStyle="italic"/>
+
+            <TextView
+                android:id="@+id/txtBodySms"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="+ 127861387"
+                android:layout_marginTop="5dp"
+                android:textAlignment="center"
+                android:background="#CAC7C7"/>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</layout>
