@@ -13,7 +13,10 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:background="#CCF8FD"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp">
 
             <TextView
                 android:id="@+id/txtPhoneCallLogs"
@@ -41,7 +44,7 @@
                 android:textAlignment="center"
                 android:text="@{callings.call}"
                 android:layout_marginTop="5dp"
-                android:background="#CAC7C7"/>
+                android:background="#D8D8D8"/>
 
             <TextView
                 android:id="@+id/txtDurationCallLogs"
@@ -50,7 +53,7 @@
                 android:textAlignment="center"
                 android:text="@{callings.duration}"
                 android:layout_marginTop="5dp"
-                android:background="#CAC7C7"/>
+                android:background="#D8D8D8"/>
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 </layout>

@@ -61,7 +61,7 @@ public class BackupCallLogActivity extends AppCompatActivity {
 
             String idDuration = CallLog.Calls.DURATION;
             int duration = cursor.getColumnIndex(idDuration);
-            String getDuration = cursor.getString(duration) + " s";
+            String getDuration = cursor.getString(duration) + "s";
 
             current.add(new CallLogs(getNumBer, getName, getDuration, getType));
         }
