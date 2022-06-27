@@ -10,6 +10,7 @@ import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.view.View;
 
+import com.example.backup_restore.presentation.view.backup_call_logs.BackupCallLogActivity;
 import com.example.backup_restore.presentation.view.backup_contact.BackupContactActivity;
 import com.example.backup_restore.databinding.MainBinding;
 import com.example.backup_restore.presentation.view.backup_sms.BackupSmsActivity;
@@ -61,6 +62,27 @@ public class MainActivity2 extends AppCompatActivity {
                 openBackupSmsActivity();
             }
         });
+
+        main2Binding.btnBackupCallLogs.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openBackupCallLogsActivity();
+            }
+        });
+    }
+
+    private void openBackupCallLogsActivity() {
+        //check permission
+        if(ContextCompat.checkSelfPermission(
+                this, Manifest.permission.READ_CALL_LOG)!= PackageManager.PERMISSION_GRANTED){
+            ActivityCompat.requestPermissions(
+                    this,new String[]{Manifest.permission.READ_CALL_LOG},0);
+        }
+        else
+        {
+            Intent intent=new Intent(MainActivity2.this, BackupCallLogActivity.class);
+            startActivity(intent);
+        }
     }
 
     private void openBackupSmsActivity() {

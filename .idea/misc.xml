@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/AndroidStudioProjects/Backup_Restore/app/src/main/res/layout/activity_backup_call_log.xml" value="0.1765625" />
         <entry key="..\:/AndroidStudioProjects/Backup_Restore/app/src/main/res/layout/activity_backup_contact.xml" value="0.18697916666666667" />
         <entry key="..\:/AndroidStudioProjects/Backup_Restore/app/src/main/res/layout/activity_backup_sms.xml" value="0.16799999999999998" />
         <entry key="..\:/AndroidStudioProjects/Backup_Restore/app/src/main/res/layout/activity_main.xml" value="0.264" />
