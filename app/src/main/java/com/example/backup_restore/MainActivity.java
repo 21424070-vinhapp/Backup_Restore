@@ -35,6 +35,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void updateUI(GoogleSignInAccount gsa) {
-        Log.d("BBB", "updateUI: " + gsa.toString());
+        Log.d("BBB", "updateUI: Access");
     }
 }
