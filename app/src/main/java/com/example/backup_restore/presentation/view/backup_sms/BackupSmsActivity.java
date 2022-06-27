@@ -56,7 +56,7 @@ public class BackupSmsActivity extends AppCompatActivity {
                 String time = cursor.getString(idTime);
                 String body = cursor.getString(idBody);
                 //add to list
-                current.add(new Sms(phone, time, body));
+                current.add(new Sms(phone, simpleDateFormat.format(Long.parseLong(time)), body));
             }
         }
         cursor.close();
